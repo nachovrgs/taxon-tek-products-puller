@@ -1,1 +1,110 @@
-{"sources": [{"name": "megasur", "download_url": "https://www.megasur.es/download/file-rate?file=csv-prestashop&u=298707&hash=b289ef7f99e2fcb41fc13d41821f7ae1&id=100000", "type": "endpoint", "encoding": "ISO-8859-1", "active": true}, {"name": "mcr", "download_url": "https://www.openmcr.com.es/ver-tarifa/it/csv/todos/aWxkZWZvbnNvQHRheG9udGVrLmNvbSYmJDJ5JDEwJEZ5WTZxZEM4dEFCMHNwazc4a1BZbWVPdm8xb1ZpR1g1ckdNTFczVWc1OEZ1dG04Uk45ak5HJiYyMDIzLTAyLTE3IDEzOjI0OjE3", "type": "endpoint", "active": true}, {"name": "impexopcion", "download_url": "https://inpexopcion.com/csv.php?m=057cde706bcb432cf54ef8e65928048cc47bb2d332c7f43217389f3fd50d2a3d", "type": "endpoint", "active": false}, {"name": "supercomp", "download_url": "https://www.supercompdigital.com/ficherosFTP.ashx?id=32CD30CF37C839C630CF", "type": "endpoint", "encoding": "ISO-8859-1", "active": true}, {"name": "globomatik", "download_url": "https://multimedia.globomatik.net/csv/import.php?username=36268&password=87596029&mode=all&type=default", "type": "endpoint", "encoding": "ISO", "active": true}, {"name": "bts", "download_url": "https://www.openmcr.com.es/ver-tarifa/it/csv/todos/aWxkZWZvbnNvQHRheG9udGVrLmNvbSYmJDJ5JDEwJEZ5WTZxZEM4dEFCMHNwazc4a1BZbWVPdm8xb1ZpR1g1ckdNTFczVWc1OEZ1dG04Uk45ak5HJiYyMDIzLTAyLTE3IDEzOjI0OjE3", "type": "endpoint", "active": true}, {"name": "ingrammicro", "download_url": "sftp://mercury.ingrammicro.com", "type": "ftp", "user": "ES755817", "password": "m8s~S47Iu_", "active": false}], "dryrun": false, "cleanup": true, "skus_doc_url": "https://docs.google.com/spreadsheets/d/1KV1AUbjNTo0_5QjFJjOyuptE27en2mlux6OxyKmohZg", "skus_doc_sheet_name": "EAN", "last_check": "2023-06-05T08:00:07Z"}
+{
+  "sources": [
+    {
+      "name": "megasur",
+      "download_url": "https://www.megasur.es/download/file-rate?file=csv-prestashop&u=298707&hash=b289ef7f99e2fcb41fc13d41821f7ae1&id=100000",
+      "type": "endpoint",
+      "encoding": "ISO-8859-1",
+      "active": true,
+      "use_local": false,
+      "header": 0,
+      "separator": ";",
+      "includes_tax": false
+    },
+    {
+      "name": "mcr",
+      "download_url": "https://www.openmcr.com.es/ver-tarifa/it/csv/todos/aWxkZWZvbnNvQHRheG9udGVrLmNvbSYmJDJ5JDEwJEZ5WTZxZEM4dEFCMHNwazc4a1BZbWVPdm8xb1ZpR1g1ckdNTFczVWc1OEZ1dG04Uk45ak5HJiYyMDIzLTAyLTE3IDEzOjI0OjE3",
+      "type": "endpoint",
+      "active": true,
+      "use_local": false,
+      "header": 0,
+      "separator": ";",
+      "includes_tax": true
+    },
+    {
+      "name": "impexopcion",
+      "download_url": "https://inpexopcion.com/csv.php?m=057cde706bcb432cf54ef8e65928048cc47bb2d332c7f43217389f3fd50d2a3d",
+      "type": "endpoint",
+      "active": true,
+      "use_local": false,
+      "header": 0,
+      "separator": ";",
+      "includes_tax": true
+    },
+    {
+      "name": "supercomp",
+      "download_url": "https://www.supercompdigital.com/ficherosFTP.ashx?id=32CD30CF37C839C630CF",
+      "type": "endpoint",
+      "encoding": "utf-8",
+      "active": true,
+      "use_local": false,
+      "header": 0,
+      "separator": ";",
+      "engine": "c",
+      "includes_tax": true
+    },
+    {
+      "name": "globomatik",
+      "download_url": "http://multimedia.globomatik.net/csv/import.php?username=36268&password=87596029&mode=all&type=default",
+      "type": "endpoint",
+      "encoding": "latin-1",
+      "active": true,
+      "use_local": false,
+      "header": 0,
+      "includes_tax": true
+    },
+    {
+      "name": "bts",
+      "download_url": "https://www.openmcr.com.es/ver-tarifa/it/csv/todos/aWxkZWZvbnNvQHRheG9udGVrLmNvbSYmJDJ5JDEwJEZ5WTZxZEM4dEFCMHNwazc4a1BZbWVPdm8xb1ZpR1g1ckdNTFczVWc1OEZ1dG04Uk45ak5HJiYyMDIzLTAyLTE3IDEzOjI0OjE3",
+      "type": "endpoint",
+      "active": false,
+      "use_local": false,
+      "header": 0,
+      "includes_tax": true
+    },
+    {
+      "name": "ingrammicro",
+      "download_url": "mercury.ingrammicro.com",
+      "type": "ftp",
+      "user": "ES755817",
+      "password": "m8s~S47Iu_",
+      "encoding": "ISO-8859-1",
+      "file_path": "PRICE09.ZIP",
+      "expected_file": "PRICE09.TXT",
+      "active": true,
+      "use_local": false,
+      "separator": ",",
+      "includes_tax": true
+    }
+  ],
+  "dryrun": true,
+  "cleanup": false,
+  "use_local": true,
+  "skus_doc_url": "https://docs.google.com/spreadsheets/d/1KV1AUbjNTo0_5QjFJjOyuptE27en2mlux6OxyKmohZg",
+  "skus_doc_sheet_name": "EAN",
+  "last_check": "2023-08-11T11:23:34Z",
+  "tax": 1.21,
+  "differential_price": {
+     "50":1.12,
+     "100":1.10,
+     "inf":1.08
+  },
+  "defaults": {
+    "images": [
+      "mcr",
+      "megasur",
+      "globomatik",
+      "source"
+    ],
+    "name": [
+      "megasur",
+      "supercomp",
+      "source"
+    ],
+    "description": [
+      "megasur",
+      "supercomp",
+      "source"
+    ]
+  }
+}

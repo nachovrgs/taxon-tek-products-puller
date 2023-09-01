@@ -1,7 +1,9 @@
 python-dotenv==0.17.1
 requests==2.27.1
 pytz==2022.5
+asyncio>=3.4.3
 WooCommerce==3.0.0
 pandas>=2.0.0
+pysftp>=0.2.9
 black
 isort

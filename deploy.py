@@ -12,8 +12,10 @@ IGNORE = [
     "deploy.py",
     "Makefile",
     "README.md",
-    "config.json",
+    # "config.json",
     "requirements.local.txt",
+    "tmp",
+    "tmp_old",
 ]
 
 
@@ -37,6 +39,8 @@ def store_file(session, path):
 
 
 if __name__ == "__main__":
-    with FTP(Config.FTP_HOSTNAME, Config.FTP_USERNAME, Config.FTP_PASSWORD) as session:
+    with FTP(
+        Config.FTP_HOSTNAME, Config.FTP_USERNAME, Config.FTP_PASSWORD
+    ) as session:
         session.encoding = "utf-8"
         store_file(session=session, path=".")
